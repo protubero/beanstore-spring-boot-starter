@@ -1,0 +1,1 @@
+# beanstore-spring-boot-starter
