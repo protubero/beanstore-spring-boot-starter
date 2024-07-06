@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.protubero</groupId>
 	<artifactId>beanstore-spring-boot-starter</artifactId>
-	<version>0.8.0-SNAPSHOT</version>
+	<version>0.8.6-SNAPSHOT</version>
 	<name>beanstore-spring-boot-starter</name>
 	<description>BeanStore Spring Boot Lib</description>
 
-	<url>https://github.com/protubero/beanstore-spring</url>
+	<url>https://github.com/protubero/beanstore-spring-boot</url>
 	<developers>
 		<developer>
 			<name>Manfred Schäfer</name>
@@ -25,9 +25,9 @@
 	</licenses>
 	
 	<scm>
-		<url>https://github.com/protubero/beanstore-spring</url>
-		<connection>scm:git:git://github.com/protubero/beanstore-spring.git</connection>
-		<developerConnection>scm:git:git@github.com:protubero/beanstore-spring.git</developerConnection>
+		<url>https://github.com/protubero/beanstore-spring-boot</url>
+		<connection>scm:git:git://github.com/protubero/beanstore-spring-boot.git</connection>
+		<developerConnection>scm:git:git@github.com:protubero/beanstore-spring-boot.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	
@@ -198,8 +198,8 @@
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.12.1</version>
 					<configuration>
-						<source>11</source>
-						<target>11</target>
+						<source>17</source>
+						<target>17</target>
 					</configuration>
 				</plugin>
 

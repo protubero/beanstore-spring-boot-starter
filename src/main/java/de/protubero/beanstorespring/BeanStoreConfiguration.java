@@ -38,7 +38,7 @@ public class BeanStoreConfiguration {
 	@Autowired
 	private BeanStoreProperties properties;
 
-	@Autowired
+	@Autowired(required = false)
 	private BeanStoreInitializer storeInitializer;
 
 	@Autowired
@@ -72,8 +72,9 @@ public class BeanStoreConfiguration {
 		log.info("Build Bean Store Builder");
 		BeanStoreBuilder builder = BeanStoreBuilder.init(persistence);
 	
-
-		builder.initNewStore(storeInitializer);
+		if (storeInitializer != null) {
+			builder.initNewStore(storeInitializer);
+		}	
 
 		// Migrations
 		List<MigrationNode> migrationList = new ArrayList<>();
